@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+
+.nav-btn {
+  background: #00ff88;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.desktop-download {
+  display: inline-block;
+}
+
+.mobile-download {
+  display: none;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  background: radial-gradient(circle at top left, #00ff8850, transparent 60%),
+              radial-gradient(circle at bottom right, #00aaff40, transparent 60%);
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #00ff88;
+  color: black;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+}
+
+.btn-secondary:hover {
+  border-color: #00ff88;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* APK CARD */
+.hero-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-card h2 {
+  font-size: 22px;
+}
+
+.small-text {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.apk-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.apk-info h3 {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.apk-info p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-download {
+  display: block;
+  text-align: center;
+  background: #00ff88;
+  color: black;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.note {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* SECTION */
+.section-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.section-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+/* SCREENSHOTS */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.screenshot-grid img {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* INSTALL */
+.install-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+/* FAQ */
+.faq-box {
+  display: grid;
+  gap: 20px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 25px 20px;
+  text-align: center;
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.small-footer {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* ============================= */
+/* RESPONSIVE (TABLET + MOBILE)  */
+/* ============================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .apk-info {
+    justify-content: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .desktop-download {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0d0d0d;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-download {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .section-container h2 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .section-container {
+    padding: 50px 15px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .brand span {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
